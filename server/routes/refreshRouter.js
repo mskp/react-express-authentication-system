@@ -29,7 +29,7 @@ refreshRouter.post("/", async (req, res) => {
                 if (error || !user._id.equals(decoded._id)) return res.sendStatus(403);
 
                 // Generating a new access token using the user's ID and full name
-                const accessToken = generateAccessToken(user._id, user.fullName);
+                const accessToken = generateAccessToken(user._id);
 
                 // Sending a JSON response with the new access token
                 res.json({ accessToken });

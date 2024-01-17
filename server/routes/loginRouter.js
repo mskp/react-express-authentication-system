@@ -30,7 +30,7 @@ loginRouter.post("/", async (req, res) => {
         if (!validPassword) return res.status(401).json({ message: "Invalid credentials" });
 
         // Generating an access token and a refresh token
-        const accessToken = generateAccessToken(user._id, user.fullName);
+        const accessToken = generateAccessToken(user._id);
         const refreshToken = generateRefreshToken(user._id);
 
         // Updating the user document in the database to include the new refresh token

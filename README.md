@@ -1,13 +1,10 @@
 # Secure Authentication System (Express.js & React.js with JWT)
 
-## Deployment URLs
-
-- **Front-End: [https://auth-client.sushant.fun](https://auth-client.sushant.fun)**
-- **Back-End: [https://auth.sushant.fun](https://auth.sushant.fun)**
-
 ## Overview
 
 > This authentication system is designed to provide a secure and unique approach to user authentication. Unlike conventional systems that store access tokens in cookies or local storage, this system takes a different and more secure approach by storing the accessToken in memory.
+
+**Article**: <https://blog.sushant.fun/building-a-secure-authentication-system-with-reactjs-and-expressjs>
 
 - **Key Features**
 
